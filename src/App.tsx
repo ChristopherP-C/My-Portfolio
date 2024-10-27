@@ -1,6 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+//import { outlet } from 'react';
+import Home from './pages/home';
 
-const App = () => <PortfolioContainer />;
+function App() {
+  return (
+    <>
+    <main>
+        <Home />
+    </main>
+    </>
+  );
+}
 
 export default App;
