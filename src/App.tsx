@@ -1,11 +1,12 @@
-//import { outlet } from 'react';
-import Home from './pages/home';
-
+import { Outlet } from 'react-router-dom';
+import MainNav from './components/mainNav';
 function App() {
+    
   return (
     <>
+    <MainNav />
     <main>
-        <Home />
+        <Outlet />
     </main>
     </>
   );
