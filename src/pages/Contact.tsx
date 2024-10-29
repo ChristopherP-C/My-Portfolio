@@ -52,7 +52,7 @@ export default function Contact() {
                     type='text'
                     placeholder='Name'
                     />
-                    <label for="floatingName">Name</label>
+                    <label htmlFor="floatingName">Name</label>
                     </div>
                     <div className="form-floating mb-3">
                     <input
@@ -64,7 +64,7 @@ export default function Contact() {
                     type='email'
                     placeholder='Email'
                     />
-                    <label for="floatingEmail">Email</label>
+                    <label htmlFor="floatingEmail">Email</label>
                     </div>
                     <div className="form-floating mb-3">
                     <textarea
@@ -75,7 +75,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     placeholder='Message'
                     />
-                    <label for="floatingMessage">Message</label>
+                    <label htmlFor="floatingMessage">Message</label>
                     </div >
                     <div className="d-grid gap-2 col-3 mx-auto mb-3">
                     <button type='submit' className="btn btn-primary">Submit</button>

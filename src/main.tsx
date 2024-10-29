@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import Error from './pages/Error';
 import Home from './pages/home';
-import AboutMe from './pages/AboutMe';
+import AboutMe from './pages/aboutMe';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/resume';
