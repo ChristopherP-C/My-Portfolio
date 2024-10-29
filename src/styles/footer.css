@@ -1,0 +1,13 @@
+/* make footer text centered */
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #2c0847;
+  color: white;
+}
+/* make footer text slightly larger */
+
+footer p {
+  font-size: 1.2em;
+}

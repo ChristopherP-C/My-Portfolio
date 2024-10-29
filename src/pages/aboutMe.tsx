@@ -1,6 +1,8 @@
+import '../styles/aboutMe.css';
+
 export default function AboutMe() {
     return (
-        <div>
+        <div id='body'>
             <h1>About Me:</h1>
 
             <section>

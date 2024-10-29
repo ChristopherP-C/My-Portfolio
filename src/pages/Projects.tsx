@@ -1,5 +1,5 @@
 // create function which will return six different sections each containing a title for my project, a corrospoining image, a short description, and a see more button which will bring up a card with a more detailed description and links to both the project and GitHub repository
-import { Link, Outlet } from 'react-router-dom';
+// import { Link, Outlet } from 'react-router-dom';
 
 export default function Projects() {
     // create six sections each containing a title for my project, a corrospoining image, a short description, and a see more button which will bring up a card with a more detailed description and links to both the project and GitHub repository

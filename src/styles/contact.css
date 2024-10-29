@@ -1,0 +1,15 @@
+/* create background for form to be purple with slight white gradient */
+
+form {
+  background: linear-gradient(rgba(93, 3, 129, 0.5), rgba(44, 8, 68, 0.5)), url("../images/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+
+/* align h1 to be centered */
+
+h1 {
+  text-align: center;
+}
