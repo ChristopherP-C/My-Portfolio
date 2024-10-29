@@ -1,3 +1,6 @@
+import useTimeElapsed from '../utils/time';
+import monthsElapsed from '../utils/timeMonths';
+
 export default function Home() {
     return (
         <div>
@@ -38,10 +41,10 @@ export default function Home() {
                     </div>
                     <div>
                         <p>
-                            Years: 0
+                            Years: {useTimeElapsed()}
                         </p>
                         <p>
-                            Months: 0
+                            Months: {monthsElapsed()}
                         </p>
                     </div>
                 </div>
