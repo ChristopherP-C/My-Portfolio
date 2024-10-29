@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import MainNav from './components/mainNav';
+import Footer from './components/Footer';
 // import { useState, useEffect } from 'react';
 // import Projects from './pages/Projects';
 // import ProjectCards from './components/projectCards';
@@ -19,10 +20,13 @@ function App() {
     
   return (
     <>
+    <header>
     <MainNav />
+    </header>
     <main>
         <Outlet />
     </main>
+    <Footer />
     </>
   );
 }
