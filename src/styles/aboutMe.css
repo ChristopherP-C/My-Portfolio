@@ -1,0 +1,24 @@
+/* make each h2 centered in the screen and have the p tag show slightly larger font and have each list display with each list item going horizontally across the screen and have the background of the entire page be a light-blue color */
+
+/* make each h2 centered in the screen */
+h2 {
+  text-align: center;
+}
+
+/* have the p tag show slightly larger font */
+p {
+  font-size: 1.2em;
+}
+
+/* have each list display with each list item going horizontally across the screen */
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* make each list item deisplay neatly in a box with a light-gray background and even distance apart */
+

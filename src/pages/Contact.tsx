@@ -1,5 +1,7 @@
 import { useState } from "react";
 import validateEmail from "../utils/helper.ts";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/contact.css';
 
 export default function Contact() {
 
@@ -36,37 +38,54 @@ export default function Contact() {
     };
 
     return (
-        <div>
-            <h1>Please feel free to contact me!</h1>
+        <div className="container">
+            <h1 className="mb-5">Please feel free to contact me!</h1>
             <section>
-                <form onSubmit={handleFormSubmit}>
+                <form className="container" onSubmit={handleFormSubmit}>
+                    <div  className="form-floating mb-3">
                     <input
+                    className="form-control"
+                    id="floatingName"
                     value={name}
                     name='name'
                     onChange={handleInputChange}
                     type='text'
                     placeholder='Name'
                     />
+                    <label for="floatingName">Name</label>
+                    </div>
+                    <div className="form-floating mb-3">
                     <input
+                    className="form-control"
+                    id="floatingEmail"
                     value={email}
                     name='email'
                     onChange={handleInputChange}
                     type='email'
                     placeholder='Email'
                     />
+                    <label for="floatingEmail">Email</label>
+                    </div>
+                    <div className="form-floating mb-3">
                     <textarea
+                    className="form-control"
+                    id="floatingMessage"
                     value={message}
                     name='message'
                     onChange={handleInputChange}
                     placeholder='Message'
                     />
-                    <button type='submit'>Submit</button>
-                    </form>
+                    <label for="floatingMessage">Message</label>
+                    </div >
+                    <div className="d-grid gap-2 col-3 mx-auto mb-3">
+                    <button type='submit' className="btn btn-primary">Submit</button>
+                    </div>
                     {errorMessage && (
-                        <div>
+                        <div className="alert alert-danger d-grid gap-2 col-3 mx-auto mb-3">
                             <p>{errorMessage}</p>
                         </div>
                     )}
+                    </form>
             </section>
         </div>
     );

@@ -1,9 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/header.css';
 
 function MainNav() {
     const currentPage = useLocation().pathname;
 
     return (
+        <header>
         <ul className="nav nav-tabs">
             <li className="nav-item">
                 <Link to="/"
@@ -37,6 +40,7 @@ function MainNav() {
                 </Link>
             </li>
         </ul>
+        </header>
     );
 }
 
