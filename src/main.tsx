@@ -9,6 +9,7 @@ import AboutMe from './pages/aboutMe';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/resume';
+// import ProjectCards from './components/projectCards';
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
             {
                 path: 'Projects',
                 element: <Projects />,
+
             },
             {
                 path: 'Contact',
