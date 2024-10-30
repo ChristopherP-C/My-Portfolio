@@ -8,9 +8,10 @@ export default function Home() {
             {/* change placeholder boxes to use standar CSS syntax until bootstrap is installed */}
             <section className="flex flex-row justify-between">
 
-                <div className="w-1/4 h-24 bg-gray-300"><p>[------------]</p></div>
-                <div className="w-1/4 h-24 bg-gray-300"><p>[------------]</p></div>
-                <div className="w-1/4 h-24 bg-gray-300"><p>[------------]</p></div>
+                <div id="my-picture">
+                    <img src="src\assets\MyPicture.jpg" alt="A picture of me" />
+                </div>
+
             </section>
 
             <section>
