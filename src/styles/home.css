@@ -1,0 +1,128 @@
+/* create style so that the div with id of "my-picture" displays image as a medium sized circle in the center of the screen above the header and the links under the header appear in the center underneath it and then the <p> tag inside the div with id summary is displayed center underneath the links and then the divs within the section boxes are displayed in boxes side by side with the accolades section rendering underneath */
+#my-picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  #my-picture img {
+    border-radius: 40%;
+    width: 350px;
+    height: 250px;
+  }
+
+  #links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #links a {
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 4px solid black;
+    margin: 10px 10px;
+    padding: 5px;
+  }
+
+  #summary {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  #summary p {
+    background-color: lightgray;
+    border: 4px solid darkblue;
+    border-radius: 10px;
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+
+  #boxes {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .box {
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 4px solid black;
+    margin: 0 10px;
+    padding: 10px;
+  }
+
+  /* create styling so that in the div with id of time the two div tags are displayed next to each other left to right and divided by a verticle line */
+    #time {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    #time div {
+        margin: 0 10px;
+    }
+
+    #time div:nth-child(2) {
+        border-left: 4px solid black;
+        padding-left: 10px;
+    }
+
+    /* center <p> tags under divs with ids of months and years and make them apear in larger font with a bright blue color*/
+    #months p, #years p {
+        text-align: center;
+        font-size: 1.5em;
+        color: blue;
+    }
+
+    #projects p{
+        text-align: center;
+        font-size: 2.5em;
+        color: blue;
+    }
+
+    /* make div with id known half of its current width and make the <p> contents flex nicely within the box */
+    /* make h2 within div with id of title take 2/3 of its current width and flex within its box */
+
+    #title h2 {
+        width: 66.6%;
+        margin: 0 auto;
+    }
+    #known {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #known p {
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* make section with id of accolades have a lightgray background with a blue border and its <p> contents centerd */
+    #accolades {
+        /* fix accolades to have 70% width and center the box on the screen */
+        width: 70%;
+        margin: 0 auto;
+        background-color: lightgray;
+        border: 4px solid blue;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    #accolades p {
+        text-align: center;
+    }
+
+    /* using the div home-main create a bright blue with white gradient background for the entire home page */
+    #home-main {
+        /* fix background to extend to edges of the screen */
+    }
+
+    @media (max-width: 768px) {
+      #home-main {
+          padding: 20px; /* Adjust padding for smaller screens */
+      }
+  }
