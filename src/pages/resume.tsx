@@ -12,7 +12,7 @@ export default function Resume() {
         <br />
         <section className='resume-box'>
         <div className='resume-container'>
-        <img className='resume-image' src='src\assets\resume.png' alt='resume-image' />
+        <img className='resume-image' src='\assets\resume.png' alt='resume-image' />
         </div>
         </section>
     </div>

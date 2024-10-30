@@ -11,7 +11,7 @@ export default function Home() {
 
                 
                 <div id="my-picture">
-                    <img src="src\assets\MyPicture.jpg" alt="A picture of me" />
+                    <img src="\assets\MyPicture.jpg" alt="A picture of me" />
                 </div>
 
             </section>
