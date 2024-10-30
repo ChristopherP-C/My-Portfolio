@@ -13,3 +13,9 @@ form {
 h1 {
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  form {
+      padding: 20px 0;
+  }
+}

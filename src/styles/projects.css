@@ -1,0 +1,85 @@
+#body-projects {
+    padding-top: 50px;
+}
+
+/* Style for project cards */
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    background-color: #e0e0dd; /* Cream colored background */
+}
+
+/* Style for the image container */
+.project-card .image-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+/* Ensure all project images are the same size */
+.project-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Style for the content container */
+.project-card .content-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the project title */
+.project-card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Style for the project description */
+.project-card .description {
+    flex: 1;
+    margin: 10px 0;
+}
+
+/* Style for the links */
+.project-card a {
+    align-self: flex-end;
+    margin-top: auto;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* make each <p> element that appears within a div with class of false display red text with a pink background and curved border */
+.false p {
+    color: red;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+}

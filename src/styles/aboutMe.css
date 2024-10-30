@@ -1,24 +1,58 @@
-/* make each h2 centered in the screen and have the p tag show slightly larger font and have each list display with each list item going horizontally across the screen and have the background of the entire page be a light-blue color */
-
-/* make each h2 centered in the screen */
-h2 {
-  text-align: center;
+/* make all section elements with id box2 have a gradient red and yellow background with very subtle gradient effect and black borders with centered <p> <ul> and <li> elements*/
+.box2 {
+  /* fix box2 to have slightly curved borders and to not take up the full width of the screen*/
+    border-radius: 10px;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(216, 216, 199, 0.555), rgba(51, 137, 158, 0.562));
+    border: 5px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }
 
-/* have the p tag show slightly larger font */
-p {
-  font-size: 1.2em;
+.box2 p {
+    font-size: 1.5em;
 }
 
-/* have each list display with each list item going horizontally across the screen */
-
-ul {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+.box2 ul {
+    list-style-type: none;
 }
 
-/* make each list item deisplay neatly in a box with a light-gray background and even distance apart */
+.box2 li {
+    font-size: 1.2em;
+}
 
+/* make sections with id of knowledge accomplishments and facts appear next to each other as three columns with a gap of 10px between them */
+#knowledge, #accomplishments, #facts {
+    display: inline-block;
+    width: 30%;
+    margin: 30px;
+}
+
+/* force all elements in the knowledge, accomplishments, and facts sections to remain within their respective sections and be displayed in rows instead of columns */
+#knowledge ul, #accomplishments ul, #facts ul {
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+}
+
+/* create horizontal lines between each li element in the knowledge, accomplishments and facts sections */
+#knowledge li, #accomplishments li, #facts li {
+    border-bottom: 3px dotted black;
+    padding: 10px;
+}
+
+/* create padding between main div with id body-aboutMe between page and header */
+#body-aboutMe {
+    padding-top: 50px;
+}
+
+/* center background section */
+
+@media (max-width: 768px) {
+    #knowledge, #accomplishments, #facts {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}

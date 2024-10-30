@@ -1,5 +1,6 @@
 // create function which will return six different sections each containing a title for my project, a corrospoining image, a short description, and a see more button which will bring up a card with a more detailed description and links to both the project and GitHub repository
 // import { Link, Outlet } from 'react-router-dom';
+import '../styles/projects.css';
 
 export default function Projects() {
     // create six sections each containing a title for my project, a corrospoining image, a short description, and a see more button which will bring up a card with a more detailed description and links to both the project and GitHub repository
@@ -9,7 +10,7 @@ export default function Projects() {
             image: 'src/assets/Write-my-readme.png',
             description: 'Write-My-README is a project I made which allows users to quickly generate a professional README template. I made it using the inquirer npm package and JavaScript. It is a command line application which I personally use to create README files for my projects.',
             detailedDescription: 'Write-My-README is one of my favorite projects, because of how useful it can be when creating a project. When users run the application they recieve a series of prompts which they can answer to generate a README file, which is then placed in a seperate dist folder to be edited, copied, and used however they see fit.',
-            githubLink: 'https://github.com/ChristopherP-C/Write-My-README',
+            gitHubLink: 'https://github.com/ChristopherP-C/Write-My-README',
             projectLink: 'NA'
         },
         {
@@ -17,7 +18,7 @@ export default function Projects() {
             image: 'src/assets/employee-toolbox.png',
             description: 'The Employee Toolbox is a simple command line application which utilizes SQL to create locally stored databases for tracking employees, salaries, jobs and departments within a company. It serves to present important information quickly and allows wasy manipulation of the data.',
             detailedDescription: 'The Employee Toolbox allows users to create employee information including their name, salary, job, department, and manager. The data can be manipulated, viewed in a variety of ways, and updated as needed. While it is a simple application now, I hope to be able to call upon it as a template to use in a project to make a more complex and useful application in the future.',
-            githubLink: 'https://github.com/ChristopherP-C/Employee-Toolbox',
+            gitHubLink: 'https://github.com/ChristopherP-C/Employee-Toolbox',
             projectLink: 'NA'
         },
         {
@@ -25,7 +26,7 @@ export default function Projects() {
             image: 'src/assets/FuncTastic.png',
             description: 'FuncTastic, or "Function Checklist", is the first collaborative project I ever made. It serves to provide an easy way to track and manage functions added to your project while coding. It also provides basic troubleshooting tips to try and aid new developers to find and fix common issues quickly.',
             detailedDescription: 'As my first collaborative project, FuncTastic certainly came with its share of learning curves. I learned a lot about working with others, and how to manage a project with multiple contributors. There are many more places I want to go with this project, and I dont see myself leaving it just yet. I believe there is plenty of potential for it to be a useful extension that can help many coders.',
-            githubLink: 'https://github.com/ChristopherP-C/function-checklist',
+            gitHubLink: 'https://github.com/ChristopherP-C/function-checklist',
             projectLink: 'https://raeofchey.github.io/function-checklist/'
         },
         {
@@ -53,11 +54,11 @@ export default function Projects() {
             projectLink: 'NA'
         },
     ]
-    
+
     return (
-        <div>
+        <div id='body-projects'>
             <h1>My projects</h1>
-            <div>
+            <div id='projectsTitle'>
                 <p>
                     Below are some projects that I have completed or are currently working on, please feel free to take a look at them
                     and if any catch your eye, click the see more button to learn more and find links to their respective GitHub repositories.
@@ -65,23 +66,29 @@ export default function Projects() {
             </div>
 
             {projects.map((project, index) => (
-                <section key={index}>
-                    <div>
-                        <h2>{project.title}</h2>
+                <section key={index} className='project-card'>
+                    <div className="image-container">
                         <img src={project.image} alt={project.title} />
-                        <p>{project.description}</p>
+                    </div>
+                    <div className='content-container'>
+                        <h2>{project.title}</h2>
+                        <p className='description'>{project.description}</p>
                         {project.projectLink !== 'NA' && (
                             <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
                                 Visit the deployed project here!
                             </a>
                         ) || (
-                            <p>Sorry, this project is not deployed, but please view it on GitHub!</p>)}
+                            <div className='false'>
+                            <p>Sorry, this project is not deployed, but please view it on GitHub!</p>
+                            </div>)}
                         {project.gitHubLink !== 'NA' && (
                             <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
                                 Visit the GitHub repository here!
                             </a>
                         ) || (
-                            <p>Sorry, this project does not exist yet, but please check back to see more of my progress in the future!</p>)}
+                            <div className='false'>
+                            <p>Sorry, this project does not exist yet, but please check back to see more of my progress in the future!</p>
+                            </div>)}
                     </div>
                 </section>
             ))};

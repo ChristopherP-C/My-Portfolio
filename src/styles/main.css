@@ -6,6 +6,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
   padding: 20px;
+  background: linear-gradient(to bottom right, blue, white);
 }
