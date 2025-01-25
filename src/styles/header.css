@@ -1,7 +1,7 @@
 /* make header display constantly at the top of the screen and have a nive dark blue color */
 /* add space between header and body of page */
 
-
+/* 
 header {
   position: fixed;
   top: 0;
@@ -12,8 +12,6 @@ header {
   padding: 0px 0;
 }
 
-/* make nav bar ul elements take up about 60% of the header space in total and be grouped on the right side of the header */
-
 ul {
   display: flex;
   justify-content: flex-end;
@@ -21,4 +19,4 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+ */

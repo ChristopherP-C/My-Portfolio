@@ -1,8 +1,7 @@
-#body-projects {
+/* #body-projects {
     padding-top: 50px;
 }
 
-/* Style for project cards */
 .project-card {
     display: flex;
     flex-direction: row;
@@ -12,16 +11,14 @@
     padding: 20px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    background-color: #e0e0dd; /* Cream colored background */
+    background-color: #e0e0dd;
 }
 
-/* Style for the image container */
 .project-card .image-container {
     flex: 0 0 auto;
     margin-right: 20px;
 }
 
-/* Ensure all project images are the same size */
 .project-card img {
     width: 150px;
     height: 150px;
@@ -29,26 +26,22 @@
     border-radius: 10px;
 }
 
-/* Style for the content container */
 .project-card .content-container {
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
 }
 
-/* Style for the project title */
 .project-card h2 {
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-/* Style for the project description */
 .project-card .description {
     flex: 1;
     margin: 10px 0;
 }
 
-/* Style for the links */
 .project-card a {
     align-self: flex-end;
     margin-top: auto;
@@ -61,7 +54,6 @@
     text-decoration: underline;
 }
 
-/* make each <p> element that appears within a div with class of false display red text with a pink background and curved border */
 .false p {
     color: red;
     background-color: pink;
@@ -82,4 +74,4 @@
         width: 100%;
         height: auto;
     }
-}
+} */
