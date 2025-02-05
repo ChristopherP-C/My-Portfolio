@@ -28,12 +28,6 @@ function MainNav() {
                 </Link>
             </li>
             <li className="nav-item">
-                <Link to="/Contact"
-                className={currentPage === "/Contact" ? "nav-link active" : "nav-link"}>
-                    Contact
-                </Link>
-            </li>
-            <li className="nav-item">
                 <Link to="/resume"
                 className={currentPage === "/resume" ? "nav-link active" : "nav-link"}>
                     Resume
