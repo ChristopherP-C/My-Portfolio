@@ -1,10 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
+import ResumeModal from "./resumeModal";
+import { Button } from 'react-bootstrap';
+import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/header.css';
 
+
 function MainNav() {
     const currentPage = useLocation().pathname;
-
+    const [showResume, setShowResume] = useState(false);
+    
     return (
         <header>
         <ul className="nav nav-tabs">
@@ -27,13 +32,14 @@ function MainNav() {
                     Projects
                 </Link>
             </li>
-            <li className="nav-item">
-                <Link to="/resume"
-                className={currentPage === "/resume" ? "nav-link active" : "nav-link"}>
-                    Resume
-                </Link>
-            </li>
+
+        <div className="resume-button">
+            <Button variant="primary" onClick={() => setShowResume(true)}>View my resume</Button>
+            <ResumeModal show={showResume} onHide={() => setShowResume(false)}/>
+        </div>
         </ul>
+
+
         </header>
     );
 }
