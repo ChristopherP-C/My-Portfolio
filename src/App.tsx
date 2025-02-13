@@ -26,7 +26,6 @@ function App() {
     <main>
         <Outlet />
     </main>
-    <br />
     <Footer />
     </>
   );

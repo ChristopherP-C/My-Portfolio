@@ -1,3 +1,5 @@
+import '../styles/projectCard.css';
+
 type Project = {
     title: string,
     image: string,

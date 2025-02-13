@@ -1,0 +1,6 @@
+img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    border: 2px solid rgb(31, 80, 214);
+}
