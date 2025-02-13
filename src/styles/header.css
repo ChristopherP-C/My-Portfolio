@@ -1,21 +1,38 @@
 /* make header display constantly at the top of the screen and have a nive dark blue color */
 /* add space between header and body of page */
 
-
 .nav {
+  display: flex;
   position: fixed;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  background-color: #2f086e;
-  color: rgb(255, 255, 255);
-  padding: 20px 0;
+  align-self: stretch;
+  background-color: #1d396d;
+  justify-content: center;
+  min-height: max-content;
+  min-width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 10%;
+}
+
+.nav-item {
+  font-size: 20px;
+  display: flex;
+  width: 160px;
 }
 
 .nav-link {
-  display: flex;
+  color: yellow;
+  padding: 15px;
+  text-align: center;
   flex-grow: 1;
-  justify-content: flex-start;
-  width: 100px;
 }
 
+.resume-button button {
+  background-color: #059e38;
+  color: rgb(0, 255, 255);
+  margin-top: 5px;
+  padding: 15px;
+  border: 4px solid #16a6df;
+}

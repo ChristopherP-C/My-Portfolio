@@ -22,9 +22,11 @@ function App() {
   return (
     <>
     <MainNav />
+    <br />
     <main>
         <Outlet />
     </main>
+    <br />
     <Footer />
     </>
   );
