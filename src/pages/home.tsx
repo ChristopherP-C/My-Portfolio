@@ -14,24 +14,24 @@ export default function Home() {
             </section>
 
             <section>
-                <div>
+                <div className='greeting'>
                     <h1>
                     Hello!
                     </h1>
                     <h1>
-                    I am Christopher James Persaud-Cox,
+                    I am <span className='name'>Christopher James Persaud-Cox</span>,
                     </h1>
                     <h1>
-                    A full-stack web developer and software enginner.
+                    A <span className='webDev'>full-stack web developer</span> and <span className='software'>software enginner</span>.
                     </h1>
                 </div>
 
-                <div id='links'>
+                <div className='links'>
                     <a href="https://github.com/ChristopherP-C">Visit my GitHub</a>
                     <a href="mailto:christopherp.c.2day@gmail.com">Email me</a>
                 </div>
                 
-                <div id="summary">
+                <div className="summary">
                     <p>
                         I am a web developer and software engineer recently graduated from the University of Minnesota coding bootcamp program.
                         I have a passion for learning and problem solving, and I am always looking for new challenges to overcome.

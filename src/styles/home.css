@@ -1,0 +1,26 @@
+h1 {
+    color : rgb(72, 188, 226);
+    font-family: "Genos", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5em;
+}
+
+.name, .webDev, .software {
+    font-family: "Bruno Ace SC", serif;
+    font-size: .7em;
+    color: rgb(238, 166, 33);
+}
+
+.greeting {
+    border: 2px solid rgb(32, 252, 142);
+}
+
+.links {
+    border: 2px solid rgb(182, 34, 15)
+}
+
+.summary {
+    border: 2px solid rgb(10, 185, 255);
+}
