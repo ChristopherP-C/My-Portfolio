@@ -8,4 +8,5 @@ main {
   padding: 20px;
   color: white;
   background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(11, 4, 75));
+  justify-content: center;
 }

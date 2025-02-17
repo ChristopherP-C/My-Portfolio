@@ -13,16 +13,14 @@ export default function Home() {
 
             </section>
 
-            <section>
+            <section className='introduction'>
                 <div className='greeting'>
-                    <h1>
-                    Hello!
+                    <h1 className='hello'>
                     </h1>
-                    <h1>
-                    I am <span className='name'>Christopher James Persaud-Cox</span>,
+                    <h1 className='me'>
                     </h1>
-                    <h1>
-                    A <span className='webDev'>full-stack web developer</span> and <span className='software'>software enginner</span>.
+                    <h1 className='titles'>
+                    a <div className='webDev'>full-stack web developer</div> and <div className='software'>software enginner</div>.
                     </h1>
                 </div>
 
