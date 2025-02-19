@@ -16,17 +16,22 @@ export default function Home() {
             <section className='introduction'>
                 <div className='greeting'>
                     <h1 className='hello'>
+                    Hello!
                     </h1>
                     <h1 className='me'>
+                    I am <span className='name'>Christopher Persaud-Cox,</span>
                     </h1>
-                    <h1 className='titles'>
-                    a <div className='webDev'>full-stack web developer</div> and <div className='software'>software enginner</div>.
+                    <h1 className='title1'>
+                    a <span className='webDev'>full-stack web developer</span>
+                    </h1>
+                    <h1 className='title2'>
+                    and <span className='software'>software enginner.</span>
                     </h1>
                 </div>
 
                 <div className='links'>
                     <a href="https://github.com/ChristopherP-C">Visit my GitHub</a>
-                    <a href="mailto:christopherp.c.2day@gmail.com">Email me</a>
+                    <a href="mailto:pc.christopherj@gmail.com">Email me</a>
                 </div>
                 
                 <div className="summary">
